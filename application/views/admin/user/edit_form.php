@@ -10,7 +10,6 @@
             <form action="<?php echo site_url('admin/user/edit') ?>" method="post" >
             <div class="mb-3">
                 <label for="username">USERNAME <code>*</code></label>
-                <input class="form-control" type="hidden" name="id" value="<?=$user->id;?>" required />
                 <input class="form-control <?php echo form_error('username') ? 'is-invalid':'' ?>"type="text" name="username" value="<?=$user->username;?>" placeholder="USERNAME" required />
                 <div class="invalid-feedback">
                     <?php echo form_error('username') ?>
