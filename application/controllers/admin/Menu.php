@@ -5,6 +5,8 @@ class Menu extends CI_Controller {
     {
         parent::__construct();
         // $this->load->model("product_model");
+        cek_login();
+		cek_user();	
         $this->load->library('form_validation');
     }
     public function index()
